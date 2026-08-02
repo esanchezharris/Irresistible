@@ -1,49 +1,85 @@
-# 90-second demo script
+# 90-second demo package
 
-## 0:00–0:12 — Set the thesis
+Target: 85–90 seconds, approximately 195 spoken words. Record one clean browser take at 1440p, then tighten the two model waits in the edit instead of speeding up the narration.
 
-“I built Deal Compiler because I think an enterprise agent should interpret intent, not invent transaction truth. The model proposes a typed deal; deterministic code proves every price, approval, and alternative.”
+## 0:00–0:11 — State the boundary
 
-Show the trust-boundary card.
+“I built Deal Compiler around one rule: the model can interpret a deal, but it cannot invent transaction truth. Language becomes a typed DealSpec; deterministic code owns price, policy, and every suggested alternative.”
 
-## 0:12–0:28 — Compile a realistic request
+Show the editable request and the three-stage result beneath it.
 
-Read only the important fragments of the prompt: “420 seats, three years, compute doubles annually, $900K year-one budget, Net 60, EU, 12% off.” Click **Compile deal**.
+## 0:11–0:31 — Compile a ramped request
 
-“The LLM is constrained by a strict `DealSpec`. It records defaults and ambiguity as assumptions before anything executes.”
+“This request asks for 125 seats in year one, 250 in year two, fifty thousand credits annually, standard terms, and five percent off.”
 
-Show the seat and compute ramps in Compiled DealSpec.
+Click **Compile deal** and keep one to two seconds of the real loading state.
 
-## 0:28–0:48 — Prove the transaction
+“Structured extraction normalizes the seat ramp and commercial terms before the transaction engine runs.”
 
-Click years one through three in the price timeline.
+Pause on **Intent understood**.
 
-“The pricing kernel uses cents and basis points, applies graduated seat tiers, doubles the compute ramp, and reconciles each line item. The deterministic core benchmarks around 0.01 milliseconds at p99 locally; model latency is reported separately.”
+## 0:31–0:51 — Prove the quote
 
-## 0:48–1:05 — Explain the approval DAG
+“The pricing kernel uses integer cents and basis points, applies graduated seat tiers, and recomputes the whole quote. The result is $771,400 TCV. Selecting year two exposes the product detail without changing the transaction.”
 
-“The 12% discount requires the sales manager. Net 60 adds Finance. EU adds Legal and Security in parallel. Because TCV crosses $2M, the CFO waits on the commercial chain. The critical path is calculated from dependencies, not the number of approvers.”
+Select **Year 2** in the annual table. Point once to the constraint result and the proactive alternative.
 
-Point to rule IDs and the parallel EU nodes.
+“The local price-and-route core benchmarks at 0.01 milliseconds p99; model latency is reported separately.”
 
-## 1:05–1:20 — Show agency without surrendering correctness
+## 0:51–1:10 — Exercise the approval branch
 
-Select **Fastest approval path**.
+Choose **Private-cloud bank** from **Load example**, then click **Compile deal**. Cut most of the wait.
 
-“The search agent proactively finds a 24-month structure that fits year-one budget and removes the commercial and CFO gates. It never asserts compliance itself—every candidate is re-priced and re-routed by the same kernels.”
+“A private-cloud bank crosses different rules. The same engine now routes Security and CFO review, exposes the critical path, and keeps each reason attached to the approver.”
 
-Select **Max approved revenue** briefly to show a different objective.
+Pause on **Approval plan**.
 
-## 1:20–1:30 — Close on ownership
+## 1:10–1:24 — Show agency with a validator
 
-“The replay log captures every state transition. The repo includes 13 golden tests, microbenchmarks, architecture tradeoffs, and a customer-test protocol. This is a narrow weekend slice, but it is shaped like production software.”
+Select the proactive alternative.
 
-End on: **The model proposes. The transaction engine proves.**
+“The agent surfaces a better structure before the AE asks, but it never asserts compliance. Every candidate is re-priced and re-routed by the same deterministic kernels.”
+
+## 1:24–1:30 — Close on evidence
+
+Open **Audit & replay**.
+
+“The repo includes thirteen golden tests, microbenchmarks, smoke-test prompts, and the architecture tradeoffs. The model proposes. The transaction engine proves.”
 
 ## Recording notes
 
-- Record at 1440p, browser zoom 90%, with notifications disabled.
+- Record at 2560 × 1440, browser zoom 90%, with notifications disabled.
+- Start on the default Atlas request with both disclosures collapsed.
 - Keep the cursor still while speaking; move only when the narration calls for it.
-- Do one rehearsal at normal speed, then target 85–90 seconds.
 - Do not call the product “Roadrunner” or imitate their branding. It is an independent technical exploration.
-- If the live model is slow, compile before recording and cut the waiting time, but retain a short visible transition.
+- If a model call is slow, preserve one to two seconds of authentic loading and make a clean jump cut to the result.
+- Do not claim that the 0.01 ms benchmark includes the model, network, or browser.
+
+## Shot and edit checklist
+
+| Time | Frame | Edit note |
+|---:|---|---|
+| 0:00 | Atlas request plus three-stage narrative | Start immediately; no title card or webcam intro. |
+| 0:11 | Cursor marks the seat ramp, then clicks Compile | Keep one to two seconds of authentic loading. |
+| 0:31 | Intent and quote surfaces together | One restrained punch-in on the 125 → 250 ramp and TCV. |
+| 0:51 | Private-cloud example selected and compiled | Cut the middle of model latency, not the loading state itself. |
+| 1:02 | Security and CFO approval path | Leave the policy reasons readable for four seconds. |
+| 1:10 | Proactive alternative selected | Keep changed TCV and approval outcome in the same frame. |
+| 1:24 | Audit disclosure open | End on the thesis in the product footer at 1:30. |
+
+## Capture settings
+
+- 2560 × 1440 canvas, browser at 90% zoom, cursor at normal size.
+- 30 fps; export H.264 at 12–18 Mbps and AAC at 192 kbps.
+- Record narration on the Audient EVO4, 10–15 cm from the microphone, with peaks near −9 dBFS.
+- Burn in captions with no more than two lines. Emphasize only `typed DealSpec`, `deterministic`, `approval path`, and `re-priced`.
+- Use one cut per model wait and at most one punch-in. No music is necessary.
+
+## Upload copy
+
+**Title:** Deal Compiler — 90-second architecture walkthrough
+
+**Description:** A production-shaped prompt-to-quote vertical slice. An OpenAI model compiles natural language into a strict deal specification; deterministic TypeScript prices the transaction, routes policy approvals, searches valid alternatives, and records replayable events. Live demo and source are linked below.
+
+- Live: https://dealcompiler.vercel.app/
+- Source: https://github.com/esanchezharris/dealcompiler

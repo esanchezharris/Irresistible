@@ -12,6 +12,15 @@ describe("transparent demo parser", () => {
     expect(deal.paymentTerms).toBe("NET_60");
     expect(deal.regions).toEqual(["US", "EU"]);
     expect(deal.discountBps).toBe(1_200);
+
+    const seatRamp = parseDemoPrompt(
+      "Quote Atlas Manufacturing for 125 seats in year one and 250 seats in year two over 24 months. Include 50,000 compute credits each year, Net 30, shared cloud, standard support, US only, and a 5% discount.",
+    );
+    expect(seatRamp.termMonths).toBe(24);
+    expect(seatRamp.accountName).toBe("Atlas Manufacturing");
+    expect(seatRamp.seats.map((value) => value.quantity)).toEqual([125, 250]);
+    expect(seatRamp.computeCredits.map((value) => value.quantity)).toEqual([50_000, 50_000]);
+    expect(seatRamp.yearOneBudgetCents).toBeNull();
   });
 
   it("extracts a private-cloud deal and defaults to standard support", () => {

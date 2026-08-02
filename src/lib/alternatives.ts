@@ -50,7 +50,9 @@ export function findAlternatives(deal: DealSpec): Alternative[] {
     materialize(
       "revenue",
       "Max approved revenue",
-      "Uses only the discount needed to respect the year-one budget and restores standard payment terms.",
+      deal.yearOneBudgetCents
+        ? "Uses only the discount needed to respect the year-one budget and restores standard payment terms."
+        : "Removes unused discount and restores standard payment terms to maximize contract value.",
       deal,
       revenueDeal,
     ),
@@ -91,7 +93,9 @@ export function findAlternatives(deal: DealSpec): Alternative[] {
       materialize(
         "fast",
         "Fastest approval path",
-        "Minimizes approval nodes first, then critical-path SLA, while staying inside the year-one budget.",
+        deal.yearOneBudgetCents
+          ? "Minimizes approval nodes first, then critical-path SLA, while staying inside the year-one budget."
+          : "Minimizes approval nodes first, then critical-path SLA, while preserving the requested scope.",
         deal,
         fastCandidates[0].candidate,
       ),
