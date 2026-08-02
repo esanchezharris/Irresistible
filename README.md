@@ -2,7 +2,7 @@
 
 **The model proposes. The transaction engine proves.**
 
-[**Try the live model-backed demo**](https://dealcompiler.vercel.app/) · [Architecture](docs/architecture.md) · [Model smoke tests](docs/model-smoke-tests.md) · [90-second walkthrough script](docs/demo-script.md)
+[**Try the live model-backed demo**](https://dealcompiler.vercel.app/) · [Architecture](docs/architecture.md) · [Model smoke tests](docs/model-smoke-tests.md) · [90-second walkthrough](https://emiliosanchezharris.com/dc-walkthrough.mp4)
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-111111?style=flat-square) ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat-square) ![Tests](https://img.shields.io/badge/tests-13%2F13-15803D?style=flat-square) ![OpenAI](https://img.shields.io/badge/OpenAI-Structured_Outputs-412991?style=flat-square)
 
