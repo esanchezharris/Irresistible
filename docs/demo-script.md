@@ -4,7 +4,7 @@ Target: 85–90 seconds, approximately 195 spoken words. Record one clean browse
 
 ## 0:00–0:11 — State the boundary
 
-“I built Deal Compiler around one rule: the model can interpret a deal, but it cannot invent transaction truth. Language becomes a typed DealSpec; deterministic code owns price, policy, and every suggested alternative.”
+“I built Irresistible around one rule: the model can interpret a deal, but it cannot invent transaction truth. Language becomes a typed DealSpec; deterministic code owns price, policy, and every suggested alternative.”
 
 Show the editable request and the three-stage result beneath it.
 
@@ -77,9 +77,9 @@ Open **Audit & replay**.
 
 ## Upload copy
 
-**Title:** Deal Compiler — 90-second architecture walkthrough
+**Title:** Irresistible — 90-second architecture walkthrough
 
 **Description:** A production-shaped prompt-to-quote vertical slice. An OpenAI model compiles natural language into a strict deal specification; deterministic TypeScript prices the transaction, routes policy approvals, searches valid alternatives, and records replayable events. Live demo and source are linked below.
 
-- Live: https://dealcompiler.vercel.app/
+- Live: https://irresistible-demo.vercel.app/
 - Source: https://github.com/esanchezharris/dealcompiler

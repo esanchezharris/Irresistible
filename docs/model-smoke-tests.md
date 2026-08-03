@@ -1,6 +1,6 @@
 # Production model smoke tests
 
-Run on August 2, 2026 against [dealcompiler.vercel.app](https://dealcompiler.vercel.app/) with `gpt-5.6-luna` configured server-side.
+Run on August 2, 2026 against [irresistible-demo.vercel.app](https://irresistible-demo.vercel.app/) with `gpt-5.6-luna` configured server-side.
 
 These are manual production smoke tests, not a statistical model evaluation. Their purpose is to exercise different schema branches, confirm that model output crosses the strict validation boundary, and verify that the deterministic core recomputes the transaction from the parsed intent.
 

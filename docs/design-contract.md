@@ -1,4 +1,4 @@
-# Deal Compiler design contract
+# Irresistible design contract
 
 ## Screen job
 
@@ -62,7 +62,7 @@ Turn a natural-language enterprise deal request into one inspectable decision na
 - Tightened implementation target: `generated_images/exec-b0397c5f-6323-412c-bcc3-d891ef5224a9.png`
 - [Paperclip design guide](https://www.skills.sh/paperclipai/paperclip/design-guide): dense but scannable, semantic tokens, whitespace as separation, minimal elevation.
 - [Anti UI Slop](https://www.skills.sh/site/uizze.com/anti-ui-slop): product-specific hierarchy, real nouns and data, functional controls, explicit states, and accessibility finish gate.
-- Existing Deal Compiler behavior, typed result model, deterministic pricing engine, approval DAG, counterfactuals, and replay data.
+- Existing Irresistible behavior, typed result model, deterministic pricing engine, approval DAG, counterfactuals, and replay data.
 
 ## Forbidden defaults
 
