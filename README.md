@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/mascot.png" width="120" alt="Irresistible">
+</p>
+
 # Irresistible
 
 **The model proposes. The transaction engine proves.**

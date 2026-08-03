@@ -143,7 +143,7 @@ export function DealWorkbench({ initialPrompt, initialResult }: { initialPrompt:
   return (
     <main id="top">
       <header className="topbar">
-        <a className="brand" href="#top">Irresistible</a>
+        <a className="brand" href="#top"><img src="/mascot.png" alt="" style={{ width: 22, height: 22, verticalAlign: -4, marginRight: 6 }} />Irresistible</a>
         <span className="pricingLabel">Deterministic pricing</span>
       </header>
 
