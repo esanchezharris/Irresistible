@@ -143,7 +143,7 @@ export function DealWorkbench({ initialPrompt, initialResult }: { initialPrompt:
   return (
     <main id="top">
       <header className="topbar">
-        <a className="brand" href="#top">Deal Compiler</a>
+        <a className="brand" href="#top">Irresistible</a>
         <span className="pricingLabel">Deterministic pricing</span>
       </header>
 

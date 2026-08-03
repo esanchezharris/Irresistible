@@ -1,12 +1,12 @@
-# Deal Compiler
+# Irresistible
 
 **The model proposes. The transaction engine proves.**
 
-[**Try the live model-backed demo**](https://dealcompiler.vercel.app/) · [Architecture](docs/architecture.md) · [Model smoke tests](docs/model-smoke-tests.md) · [90-second walkthrough](https://emiliosanchezharris.com/dc-walkthrough.mp4)
+[**Try the live model-backed demo**](https://irresistible-demo.vercel.app/) · [Architecture](docs/architecture.md) · [Model smoke tests](docs/model-smoke-tests.md)
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-111111?style=flat-square) ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?style=flat-square) ![Tests](https://img.shields.io/badge/tests-13%2F13-15803D?style=flat-square) ![OpenAI](https://img.shields.io/badge/OpenAI-Structured_Outputs-412991?style=flat-square)
 
-Deal Compiler turns an account executive's unstructured request into an inspectable quote, approval DAG, and set of policy-valid alternatives. The LLM is deliberately constrained to language understanding. It cannot calculate prices or decide approvals.
+Irresistible turns an account executive's unstructured request into an inspectable quote, approval DAG, and set of policy-valid alternatives. The LLM is deliberately constrained to language understanding. It cannot calculate prices or decide approvals.
 
 > “Quote Atlas Manufacturing for 125 seats in year one and 250 seats in year two over 24 months. Include 50,000 compute credits each year, Net 30, shared cloud, standard support, US only, and a 5% discount.”
 
@@ -22,7 +22,7 @@ This is a focused portfolio prototype built over a weekend. The catalog, custome
 
 ## Live demo
 
-Open [dealcompiler.vercel.app](https://dealcompiler.vercel.app/), choose a sample request or write your own, and click **Compile deal**. The production deployment uses server-side OpenAI Structured Outputs for intent extraction; the API key never reaches the browser. The resulting price, approval route, alternatives, and audit digests are recomputed by deterministic TypeScript.
+Open [irresistible-demo.vercel.app](https://irresistible-demo.vercel.app/), choose a sample request or write your own, and click **Compile deal**. The production deployment uses server-side OpenAI Structured Outputs for intent extraction. The API key never reaches the browser. The resulting price, approval route, alternatives, and audit digests are recomputed by deterministic TypeScript.
 
 The default Atlas Manufacturing request is the shortest proof of the full trust boundary: a model-normalized 125 → 250 seat ramp becomes a $771,400 deterministic quote and an explainable auto-approval. The private-cloud and ambiguous-discount examples exercise the manual approval and assumption branches without crowding the first screen.
 
@@ -127,8 +127,8 @@ docs/                         Architecture, demo, and user-test notes
 
 This is a narrow production-shaped slice, not a CPQ clone. It does not include authentication, CRM sync, tax, multi-currency, quote PDFs, durable event storage, or a policy authoring interface. The next production steps would be tenant-scoped persistence, idempotent workflow execution, versioned catalogs and policies, authorization at each transition, model evals against annotated AE requests, and observability across the model and deterministic stages.
 
-See [architecture.md](docs/architecture.md) for the tradeoffs and [demo-script.md](docs/demo-script.md) for the 90-second walkthrough.
+See [architecture.md](docs/architecture.md) for the tradeoffs.
 
 ## Why I built it
 
-I wanted to test a specific enterprise-agent thesis: natural language is useful at the boundary, but transaction truth should remain explicit, reproducible, and inspectable. Deal Compiler is deliberately narrow enough to understand in one sitting and deep enough to discuss data modeling, workflow execution, agent trust, performance, testing, and product tradeoffs.
+I wanted to test a specific enterprise-agent thesis: natural language is useful at the boundary, but transaction truth should remain explicit, reproducible, and inspectable. Irresistible is deliberately narrow enough to understand in one sitting and deep enough to discuss data modeling, workflow execution, agent trust, performance, testing, and product tradeoffs.
