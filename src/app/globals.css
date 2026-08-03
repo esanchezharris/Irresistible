@@ -7,9 +7,9 @@
   --quiet: #918b82;
   --line: #ddd8cf;
   --line-strong: #c9c2b7;
-  --accent: #e85b0d;
-  --accent-hover: #cb4c07;
-  --accent-soft: #f8e4d5;
+  --accent: #6033dd;
+  --accent-hover: #4b27b4;
+  --accent-soft: #e9e4fa;
   --success: #17633a;
   --success-soft: #e6f3e9;
   --warning: #875116;
@@ -34,7 +34,7 @@ button, select { color: inherit; }
 button { touch-action: manipulation; }
 
 :focus-visible {
-  outline: 3px solid rgba(232, 91, 13, 0.34);
+  outline: 3px solid rgba(96, 51, 221, 0.34);
   outline-offset: 2px;
 }
 
